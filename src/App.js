@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
         <WeatherCard
-          city="Dordrecht" />
-        <WeatherCard
-          city="Bali" />
+          city="Istanbul" />
+        {/* <WeatherCard
+          city="Bali" /> */}
     </div>
   );
 }
