@@ -10,8 +10,6 @@ function App() {
     <div className="App">
         <WeatherCard
           city="Istanbul" />
-        {/* <WeatherCard
-          city="Bali" /> */}
     </div>
   );
 }
