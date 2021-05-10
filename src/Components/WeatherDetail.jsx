@@ -33,7 +33,7 @@ const WeatherDetail = ({ lat, lon, city }) => {
                     return (
 
                         <Collapsible trigger={<div className="datum"> {n} <img
-                            src={`http://openweathermap.org/img/wn/${datum.weather[0].icon}.png`} alt='icon' ></img>
+                            src={`https://openweathermap.org/img/wn/${datum.weather[0].icon}.png`} alt='icon' ></img>
                             {Math.floor(datum.temp.min)}/{Math.floor(datum.temp.max)}&deg;C</div>}
                         >
                             <div className='table'>

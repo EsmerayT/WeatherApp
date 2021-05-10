@@ -16,7 +16,7 @@ const WeatherCard = ({ city }) => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=nl&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+      url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=nl&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
     })
       .then((response) => {
         console.log(response.data);
@@ -41,7 +41,7 @@ const WeatherCard = ({ city }) => {
           </h1>
         </div>
         <h5 className="icons">
-          <img src={`http://openweathermap.org/img/wn/${weatherIcon.icon}@2x.png`} alt="" />
+          <img src={`https://openweathermap.org/img/wn/${weatherIcon.icon}@2x.png`} alt="" />
         </h5>
         < div className="minmaxhumidity">
         {minmaxhumidityTemp(Math.floor(weather.temp_min), Math.floor(weather.temp_max), (weather.humidity))}
