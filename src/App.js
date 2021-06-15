@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
         <WeatherCard
-          city="Istanbul" />
+          city="Amsterdam" />
     </div>
   );
 }
